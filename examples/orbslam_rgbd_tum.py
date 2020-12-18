@@ -84,7 +84,7 @@ def save_trajectory(trajectory, filename):
             quat = list(map(str, R.from_matrix(rot).as_quat()))
             line  = list(map(str,[stamp,t0,t1,t2]))+ quat
             traj_file.write(' '.join(line) + '\n')
-        
+
 
 
 if __name__ == '__main__':
