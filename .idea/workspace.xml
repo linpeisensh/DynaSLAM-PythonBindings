@@ -13,8 +13,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/orbslam_rgbd_tum.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="85" column="50" lean-forward="true" selection-start-line="80" selection-start-column="4" selection-end-line="85" selection-end-column="50" />
+            <state relative-caret-position="874">
+              <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
               <folding>
                 <element signature="e#23#33#0" expanded="true" />
               </folding>
@@ -25,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/examples/orbslam_stereo_kitti.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="-1370">
+              <caret line="8" column="49" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="49" />
               <folding>
                 <element signature="e#23#33#0" expanded="true" />
               </folding>
@@ -39,6 +39,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>repr</find>
+      <find>left_filenames</find>
+      <find>sequence_path</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -110,12 +112,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608279442485</updated>
-      <workItem from="1608279444184" duration="2178000" />
+      <workItem from="1608279444184" duration="3062000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2178000" />
+    <option name="totallyTimeSpent" value="3062000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
@@ -150,8 +152,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/examples/orbslam_rgbd_tum.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="85" column="50" lean-forward="true" selection-start-line="80" selection-start-column="4" selection-end-line="85" selection-end-column="50" />
+        <state relative-caret-position="874">
+          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
           <folding>
             <element signature="e#23#33#0" expanded="true" />
           </folding>
@@ -160,8 +162,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/examples/orbslam_stereo_kitti.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="-1370">
+          <caret line="8" column="49" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="49" />
           <folding>
             <element signature="e#23#33#0" expanded="true" />
           </folding>
