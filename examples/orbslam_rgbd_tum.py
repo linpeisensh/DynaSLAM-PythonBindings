@@ -4,6 +4,8 @@ import os.path
 import orbslam2
 import time
 import cv2
+from scipy.spatial.transform import Rotation as R
+import numpy as np
 
 
 def main(vocab_path, settings_path, sequence_path, association_path):
@@ -77,21 +79,12 @@ def load_images(path_to_association):
 
 def save_trajectory(trajectory, filename):
     with open(filename, 'w') as traj_file:
-        traj_file.writelines('{time} {r00} {r01} {r02} {t0} {r10} {r11} {r12} {t1} {r20} {r21} {r22} {t2}\n'.format(
-            time=repr(stamp),
-            r00=repr(r00),
-            r01=repr(r01),
-            r02=repr(r02),
-            t0=repr(t0),
-            r10=repr(r10),
-            r11=repr(r11),
-            r12=repr(r12),
-            t1=repr(t1),
-            r20=repr(r20),
-            r21=repr(r21),
-            r22=repr(r22),
-            t2=repr(t2)
-        ) for stamp, r00, r01, r02, t0, r10, r11, r12, t1, r20, r21, r22, t2 in trajectory)
+        for stamp, r00, r01, r02, t0, r10, r11, r12, t1, r20, r21, r22, t2 in trajectory:
+            rot = np.array([[r00, r01, r02],[r10, r11, r12],[r20, r21, r22]])
+            quat = list(map(str, R.from_matrix(rot).as_quat()))
+            line  = list(map(str,[stamp,t0,t1,t2]))+ quat
+            traj_file.write(' '.join(line) + '\n')
+        
 
 
 if __name__ == '__main__':
