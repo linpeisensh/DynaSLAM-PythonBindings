@@ -65,7 +65,7 @@ def main(vocab_path, settings_path, sequence_path, coco_path, device):
 
         if ttrack < t:
             time.sleep(t - ttrack)
-
+        print('{.} image is finished'.format(idx))
     save_trajectory(slam.get_trajectory_points(), 'trajectory.txt')
 
     slam.shutdown()
@@ -82,11 +82,14 @@ def get_mask(coco_demo,image):
     prediction = coco_demo.compute_prediction(image)
     top = coco_demo.select_top_predictions(prediction)
     masks = top.get_field("mask").numpy()
-    rmmask = np.zeros_like(masks[0][0, :, :, None])
-    for mask in masks:
-        rmmask |= mask[0, :, :, None]
-    mmask = np.ones_like(rmmask) - np.array(rmmask).astype(np.uint8)
-    iam = image * mmask
+    if masks:
+        rmmask = np.zeros_like(masks[0][0, :, :, None])
+        for mask in masks:
+            rmmask |= mask[0, :, :, None]
+        mmask = np.ones_like(rmmask) - np.array(rmmask).astype(np.uint8)
+        iam = image * mmask
+    else:
+        iam = image
     return iam
 
 
