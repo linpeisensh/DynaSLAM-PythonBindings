@@ -37,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/examples/orbslam_stereo_kittim.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="85" column="55" lean-forward="true" selection-start-line="85" selection-start-column="55" selection-end-line="85" selection-end-column="55" />
+            <state relative-caret-position="-70">
+              <caret line="67" column="18" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
               <folding>
                 <element signature="e#23#33#0" expanded="true" />
               </folding>
@@ -78,7 +78,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-99" />
     <option name="width" value="762" />
     <option name="height" value="710" />
@@ -137,12 +137,12 @@
       <option name="presentableId" value="Default" />
       <updated>1608279442485</updated>
       <workItem from="1608279444184" duration="7017000" />
-      <workItem from="1608371433164" duration="2862000" />
+      <workItem from="1608371433164" duration="3773000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9879000" />
+    <option name="totallyTimeSpent" value="10790000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
@@ -205,8 +205,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/examples/orbslam_stereo_kittim.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="85" column="55" lean-forward="true" selection-start-line="85" selection-start-column="55" selection-end-line="85" selection-end-column="55" />
+        <state relative-caret-position="-70">
+          <caret line="67" column="18" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
           <folding>
             <element signature="e#23#33#0" expanded="true" />
           </folding>
