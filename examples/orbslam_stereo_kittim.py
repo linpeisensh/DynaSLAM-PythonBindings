@@ -41,6 +41,10 @@ def main(vocab_path, settings_path, sequence_path, coco_path, device):
         left_image = get_mask(coco_demo,left_image)
         right_image = cv2.imread(right_filenames[idx], cv2.IMREAD_UNCHANGED)
         right_image = get_mask(coco_demo, right_image)
+        if idx == 1:
+            cv2.imwrite('lm.png',left_image)
+            print("saving lm image")
+            break
         tframe = timestamps[idx]
 
         if left_image is None:
