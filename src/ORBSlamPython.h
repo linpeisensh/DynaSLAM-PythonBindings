@@ -4,8 +4,8 @@
 #include <memory>
 #include <Python.h>
 #include <boost/python.hpp>
-#include <ORB_SLAM2/System.h>
-#include <ORB_SLAM2/Tracking.h>
+#include <System.h>
+#include <Tracking.h>
 
 class ORBSlamPython
 {
@@ -18,12 +18,12 @@ public:
     
     bool initialize();
     bool isRunning();
-    bool loadAndProcessMono(std::string imageFile, double timestamp);
-    bool processMono(cv::Mat image, double timestamp);
-    bool loadAndProcessStereo(std::string leftImageFile, std::string rightImageFile, double timestamp);
-    bool processStereo(cv::Mat leftImage, cv::Mat rightImage, double timestamp);
-    bool loadAndProcessRGBD(std::string imageFile, std::string depthImageFile, double timestamp);
-    bool processRGBD(cv::Mat image, cv::Mat depthImage, double timestamp);
+//    bool loadAndProcessMono(std::string imageFile, double timestamp);
+//    bool processMono(cv::Mat image, double timestamp);
+//    bool loadAndProcessStereo(std::string leftImageFile, std::string rightImageFile, double timestamp);
+    bool processStereo(cv::Mat imLeft, cv::Mat imRight, cv::Mat maskLeft, cv::Mat maskRight,double timestamp);
+//    bool loadAndProcessRGBD(std::string imageFile, std::string depthImageFile, double timestamp);
+//    bool processRGBD(cv::Mat image, cv::Mat depthImage, double timestamp);
     void reset();
     void shutdown();
     ORB_SLAM2::Tracking::eTrackingState getTrackingState() const;
